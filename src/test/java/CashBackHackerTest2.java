@@ -1,11 +1,10 @@
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.Assert.assertEquals;
 
-
-public class CashBackHackerTest {
+public class CashBackHackerTest2 {
     @Test
-    void CalcHacker() {
+    public void CalcHacker1() {
         CashBackHacker serv = new CashBackHacker();
         int amount = 1990;
 
@@ -17,7 +16,7 @@ public class CashBackHackerTest {
     }
 
     @Test
-    void CalcHackerZero() {
+    public void CalcHackerZero1() {
         CashBackHacker serv = new CashBackHacker();
         int amount = 0;
 
@@ -29,7 +28,7 @@ public class CashBackHackerTest {
     }
 
     @Test
-    void CalcHackerMinus() {
+    public void CalcHackerMinus1() {
         CashBackHacker serv = new CashBackHacker();
         int amount = -1;
 
@@ -39,5 +38,4 @@ public class CashBackHackerTest {
         assertEquals(expected, actual);
 
     }
-
 }
